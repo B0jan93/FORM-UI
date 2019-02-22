@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>VEZBA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main1.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form class="form-labels-on-top" method="post" action="#">
+
+
+
+        <div class="form-title-row">
+            <div class="loader"></div>
+
+            <h6>New York State</h6>
+            <h1>Request for Contact</h1>
+        </div>
+
+        <div class="form-row">
+            <div class="loader1" id="loaderdva"></div>
+            <img id="prva" src="https://cdn1.iconfinder.com/data/icons/flat-design-basic-set-8/24/number-1-512.png"
+                alt="">
+            <img class="slika" id="stikla1"
+                src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-round-1/254000/46-512.png" alt="">
+            <label>
+                <span>First Name</span>
+                <input type="text" name="name"
+                    onclick="$('img#prva').css('display', 'none'),$('.loader1').css('display', 'block')">
+            </label>
+        </div>
+
+        <div class="form-row">
+            <div class="loader2"></div>
+            <img id="druga" src="https://cdn1.iconfinder.com/data/icons/flat-design-basic-set-8/24/number-2-512.png"
+                alt="">
+            <img class="slika" id="stikla2"
+                src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-round-1/254000/46-512.png" alt="">
+            <label>
+                <span>Last Name</span>
+                <input type="text" name="name"
+                    onclick="$('img#druga').css('display', 'none'),$('.loader2').css('display', 'block'),$('img#stikla1').css('display','block'),$('.loader1').css('display','none')">
+            </label>
+        </div>
+
+        <div class="form-row">
+            <div class="loader3"></div>
+            <img id="treca" src="https://cdn1.iconfinder.com/data/icons/flat-design-basic-set-8/24/number-3-512.png"
+                alt="">
+            <img class="slika" id="stikla3"
+                src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-round-1/254000/46-512.png" alt="">
+            <label>
+                <span>Email Address</span>
+                <input type="email" name="email"
+                    onclick="$('img#treca').css('display', 'none'),$('.loader3').css('display', 'block'),$('img#stikla2').css('display','block'),$('.loader2').css('display','none')">
+            </label>
+        </div>
+
+
+        <div class="form-row2">
+            <div class="loader4"></div>
+            <img id="cetvrta" src="https://cdn1.iconfinder.com/data/icons/flat-design-basic-set-8/24/number-4-512.png"
+                alt="">
+
+            <img class="slika" id="stikla4"
+                src="https://cdn1.iconfinder.com/data/icons/social-messaging-ui-color-round-1/254000/46-512.png" alt="">
+            <label><span id="bigger"
+                    onclick="$('img#cetvrta').css('display', 'none'),$('.loader4').css('display', 'block'),$('img#stikla3').css('display','block'),$('.loader3').css('display','none')">What
+                    is the best time to contact you?</span></label>
+            <div class="form-radio-buttons">
+
+
+
+                <div class="holder">
+                    <label>
+                        <input type="radio" name="radio">
+                        <span id="M"
+                            onclick="$('.loader4').css('display', 'none'),$('#stikla4').css('display','block')">Monday
+                            3pm</span>
+                    </label>
+                </div>
+
+                <div class="holder">
+                    <label>
+                        <input type="radio" name="radio">
+                        <span id="T"
+                            onclick="$('.loader4').css('display', 'none'),$('#stikla4').css('display','block')">Tuesday
+                            3pm</span>
+                    </label>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="form-row">
+            <button type="submit">Submit Request</button>
+        </div>
+
+    </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+</body>
+
+</html>
